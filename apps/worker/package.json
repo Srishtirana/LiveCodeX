@@ -1,0 +1,28 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "redis": "^4.7.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.5.4"
+  }
+}

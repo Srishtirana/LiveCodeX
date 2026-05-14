@@ -1,0 +1,64 @@
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at node:net:2274:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on WebSocketServer instance at:
+    at Server.emit (node:events:509:28)
+    at emitErrorNT (node:net:2044:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 5000
+}
+
+Node.js v24.15.0
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+Emitted 'error' event on Commander instance at:
+    at RedisSocket.<anonymous> (C:\Users\srish\OneDrive\Desktop\LiveCodex\node_modules\@redis\client\dist\lib\client\index.js:422:14)
+    at RedisSocket.emit (node:events:509:28)
+    at RedisSocket._RedisSocket_onSocketError (C:\Users\srish\OneDrive\Desktop\LiveCodex\node_modules\@redis\client\dist\lib\client\socket.js:218:10)
+    at Socket.<anonymous> (C:\Users\srish\OneDrive\Desktop\LiveCodex\node_modules\@redis\client\dist\lib\client\socket.js:191:127)
+    at Object.onceWrapper (node:events:631:26)
+    at Socket.emit (node:events:509:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+
+Node.js v24.15.0
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at node:net:2274:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on WebSocketServer instance at:
+    at Server.emit (node:events:509:28)
+    at emitErrorNT (node:net:2044:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 5000
+}
+
+Node.js v24.15.0

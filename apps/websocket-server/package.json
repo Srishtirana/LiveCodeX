@@ -1,0 +1,25 @@
+{
+  "name": "websocket-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/redis": "^4.0.11",
+    "@types/ws": "^8.5.12",
+    "redis": "^4.7.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.5.4"
+  }
+}
