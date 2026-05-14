@@ -3,14 +3,51 @@ import { WebSocketServer, WebSocket } from "ws";
 import { createClient } from "redis";
 
 const server = http.createServer();
+const wss = new WebSocketServer({ noServer: true });
 
-const wss = new WebSocketServer({
-    server,
+const allowedOrigins = new Set([
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://live-code-x-frontend.vercel.app",
+]);
+
+function isAllowedOrigin(origin?: string) {
+    if (!origin) return true;
+    if (allowedOrigins.has(origin)) return true;
+
+    try {
+        const url = new URL(origin);
+        const isLocalDevHost =
+            url.protocol === "http:" &&
+            url.port === "5173" &&
+            (url.hostname === "localhost" ||
+                url.hostname === "127.0.0.1" ||
+                url.hostname.startsWith("192.168.") ||
+                url.hostname.startsWith("10.") ||
+                /^172\.(1[6-9]|2\d|3[0-1])\./.test(url.hostname));
+
+        return isLocalDevHost;
+    } catch {
+        return false;
+    }
+}
+
+server.on("upgrade", (request, socket, head) => {
+    if (!isAllowedOrigin(request.headers.origin)) {
+        socket.destroy();
+        return;
+    }
+
+    wss.handleUpgrade(request, socket, head, (ws) => {
+        wss.emit("connection", ws, request);
+    });
 });
 
 const redisClient = createClient();
 const ROOM_TTL_SECONDS = 60 * 60 * 24 * 7;
 const MAX_ROOM_CONNECTIONS = 8;
+// FIX: cap retries to avoid infinite loop in generateRoomId
+const MAX_ROOM_ID_ATTEMPTS = 100;
 let redisAvailable = false;
 
 type User = {
@@ -18,6 +55,7 @@ type User = {
     connectionId: string;
     name: string;
     ws: WebSocket;
+    isAlive: boolean; // FIX: track heartbeat state
 };
 
 type RoomsType = {
@@ -165,16 +203,36 @@ async function patchWorkspaceFile(
     return updatedFile;
 }
 
+// FIX: added attempt cap to prevent infinite loop
 async function generateRoomId(): Promise<string> {
     let roomId = "";
+    let attempts = 0;
 
     do {
-        roomId = Math.floor(
-            100000 + Math.random() * 900000
-        ).toString();
+        if (attempts++ >= MAX_ROOM_ID_ATTEMPTS) {
+            throw new Error("Could not generate a unique room ID after maximum attempts");
+        }
+        roomId = Math.floor(100000 + Math.random() * 900000).toString();
     } while (rooms[roomId] || (await getRoomMeta(roomId)));
 
     return roomId;
+}
+
+// FIX: heartbeat interval to detect and terminate stale connections
+function startHeartbeat() {
+    const interval = setInterval(() => {
+        wss.clients.forEach((ws) => {
+            const user = ws as any;
+            if (user.isAlive === false) {
+                ws.terminate();
+                return;
+            }
+            user.isAlive = false;
+            ws.ping();
+        });
+    }, 30_000);
+
+    wss.on("close", () => clearInterval(interval));
 }
 
 async function startServer() {
@@ -191,14 +249,17 @@ async function startServer() {
         console.log("Redis unavailable, using in-memory room state");
     }
 
+    startHeartbeat(); // FIX: start heartbeat after server setup
+
     wss.on("connection", async (ws, req) => {
         try {
             console.log("New WebSocket Connection");
 
-            const url = new URL(
-                req.url || "",
-                `http://${req.headers.host}`
-            );
+            // FIX: mark connection alive for heartbeat
+            (ws as any).isAlive = true;
+            ws.on("pong", () => { (ws as any).isAlive = true; });
+
+            const url = new URL(req.url || "", `http://${req.headers.host}`);
 
             const type = url.searchParams.get("type");
             let roomId = url.searchParams.get("roomId") || "";
@@ -206,24 +267,12 @@ async function startServer() {
             const connectionId = url.searchParams.get("connectionId") || userId;
             const name = url.searchParams.get("name") || "";
 
-            console.log({
-                type,
-                roomId,
-                userId,
-                connectionId,
-                name,
-            });
+            console.log({ type, roomId, userId, connectionId, name });
 
             // VALIDATIONS
 
             if (!userId || !name) {
-                ws.send(
-                    JSON.stringify({
-                        type: "error",
-                        message: "Invalid user data",
-                    })
-                );
-
+                ws.send(JSON.stringify({ type: "error", message: "Invalid user data" }));
                 ws.close();
                 return;
             }
@@ -245,15 +294,13 @@ async function startServer() {
                     activeFileId: "",
                 });
 
-                ws.send(
-                    JSON.stringify({
-                        type: "roomId",
-                        roomId,
-                        isNewRoom: true,
-                        roomLimit: MAX_ROOM_CONNECTIONS,
-                        message: `Room created successfully`,
-                    })
-                );
+                ws.send(JSON.stringify({
+                    type: "roomId",
+                    roomId,
+                    isNewRoom: true,
+                    roomLimit: MAX_ROOM_CONNECTIONS,
+                    message: `Room created successfully`,
+                }));
 
                 console.log(`Created Room: ${roomId}`);
             }
@@ -261,17 +308,8 @@ async function startServer() {
             // JOIN ROOM
 
             else if (type === "join") {
-                if (
-                    !roomId ||
-                    roomId.length !== 6
-                ) {
-                    ws.send(
-                        JSON.stringify({
-                            type: "error",
-                            message: "Invalid room code",
-                        })
-                    );
-
+                if (!roomId || roomId.length !== 6) {
+                    ws.send(JSON.stringify({ type: "error", message: "Invalid room code" }));
                     ws.close();
                     return;
                 }
@@ -279,29 +317,18 @@ async function startServer() {
                 const roomMeta = await getRoomMeta(roomId);
 
                 if (!roomMeta) {
-                    ws.send(
-                        JSON.stringify({
-                            type: "error",
-                            message: "Room does not exist",
-                        })
-                    );
-
+                    ws.send(JSON.stringify({ type: "error", message: "Room does not exist" }));
                     ws.close();
                     return;
                 }
 
-                const activeUserIds = new Set(
-                    (rooms[roomId] || []).map((user) => user.userId)
-                );
+                const activeUserIds = new Set((rooms[roomId] || []).map((user) => user.userId));
 
                 if (!activeUserIds.has(userId) && activeUserIds.size >= MAX_ROOM_CONNECTIONS) {
-                    ws.send(
-                        JSON.stringify({
-                            type: "error",
-                            message: `Room is full. This room allows up to ${MAX_ROOM_CONNECTIONS} active collaborators.`,
-                        })
-                    );
-
+                    ws.send(JSON.stringify({
+                        type: "error",
+                        message: `Room is full. This room allows up to ${MAX_ROOM_CONNECTIONS} active collaborators.`,
+                    }));
                     ws.close();
                     return;
                 }
@@ -312,78 +339,78 @@ async function startServer() {
                     rooms[roomId] = [];
                 }
 
-                ws.send(
-                    JSON.stringify({
-                        type: "roomId",
-                        roomId,
-                        isNewRoom: false,
-                        roomLimit: MAX_ROOM_CONNECTIONS,
-                        message: "Joined room successfully",
-                    })
-                );
+                ws.send(JSON.stringify({
+                    type: "roomId",
+                    roomId,
+                    isNewRoom: false,
+                    roomLimit: MAX_ROOM_CONNECTIONS,
+                    message: "Joined room successfully",
+                }));
 
                 console.log(`Joined Room: ${roomId}`);
             }
 
             else {
-                ws.send(
-                    JSON.stringify({
-                        type: "error",
-                        message: "Invalid connection type",
-                    })
-                );
-
+                ws.send(JSON.stringify({ type: "error", message: "Invalid connection type" }));
                 ws.close();
                 return;
             }
 
             // ADD USER TO ROOM
 
-            rooms[roomId].push({
-                userId,
-                connectionId,
-                name,
-                ws,
-            });
+            rooms[roomId].push({ userId, connectionId, name, ws, isAlive: true });
 
             console.log("Current Rooms:", rooms);
 
             // SEND USERS LIST
+            // FIX: extract async logic properly; errors are now caught per-user
 
-            const sendUsersToRoom = () => {
-                rooms[roomId].forEach(async (user) => {
-                    const roomMeta = await getRoomMeta(roomId);
-                    const activeUsers = Array.from(
-                        rooms[roomId].reduce((userMap, activeUser) => {
-                            const existingUser = userMap.get(activeUser.userId);
-                            const nextConnectionIds = existingUser?.connectionIds || [];
+            const sendUsersToRoom = async () => {
+                // FIX: guard against room being deleted between async calls
+                const currentRoom = rooms[roomId];
+                if (!currentRoom) return;
 
-                            userMap.set(activeUser.userId, {
-                                id: activeUser.userId,
-                                name: activeUser.name,
-                                connectionId: activeUser.connectionId,
-                                connectionIds: [...nextConnectionIds, activeUser.connectionId],
-                                connectionCount: nextConnectionIds.length + 1,
-                                active: true,
-                            });
+                const roomMeta = await getRoomMeta(roomId);
 
-                            return userMap;
-                        }, new Map<string, any>())
-                    ).map(([, value]) => value);
+                const activeUsers = Array.from(
+                    currentRoom.reduce((userMap, activeUser) => {
+                        const existingUser = userMap.get(activeUser.userId);
+                        const nextConnectionIds = existingUser?.connectionIds || [];
 
-                    user.ws.send(
-                        JSON.stringify({
-                            type: "users",
-                            users: activeUsers,
-                            ownerId: roomMeta?.ownerId || "",
-                            members: roomMeta?.members || [],
-                            roomLimit: MAX_ROOM_CONNECTIONS,
-                        })
-                    );
+                        userMap.set(activeUser.userId, {
+                            id: activeUser.userId,
+                            name: activeUser.name,
+                            connectionId: activeUser.connectionId,
+                            connectionIds: [...nextConnectionIds, activeUser.connectionId],
+                            connectionCount: nextConnectionIds.length + 1,
+                            active: true,
+                        });
+
+                        return userMap;
+                    }, new Map<string, any>())
+                ).map(([, value]) => value);
+
+                const payload = JSON.stringify({
+                    type: "users",
+                    users: activeUsers,
+                    ownerId: roomMeta?.ownerId || "",
+                    members: roomMeta?.members || [],
+                    roomLimit: MAX_ROOM_CONNECTIONS,
+                });
+
+                // FIX: send to all users in one loop using the pre-fetched meta
+                currentRoom.forEach((user) => {
+                    try {
+                        if (user.ws.readyState === WebSocket.OPEN) {
+                            user.ws.send(payload);
+                        }
+                    } catch (err) {
+                        console.log(`Failed to send users list to ${user.userId}:`, err);
+                    }
                 });
             };
 
-            sendUsersToRoom();
+            await sendUsersToRoom();
 
             // REDIS SUBSCRIBE
 
@@ -394,14 +421,10 @@ async function startServer() {
                 await roomSubscriber.connect();
 
                 await roomSubscriber.subscribe(roomId, (message) => {
+                    // FIX: guard against missing room
                     rooms[roomId]?.forEach((user) => {
-                        if (user.userId === userId) {
-                            user.ws.send(
-                                JSON.stringify({
-                                    type: "output",
-                                    message,
-                                })
-                            );
+                        if (user.userId === userId && user.ws.readyState === WebSocket.OPEN) {
+                            user.ws.send(JSON.stringify({ type: "output", message }));
                         }
                     });
                 });
@@ -412,17 +435,17 @@ async function startServer() {
             ws.on("message", async (message) => {
                 try {
                     const data = JSON.parse(message.toString());
-
                     console.log("Message:", data.type);
 
-                    // REQUEST USERS
+                    // FIX: guard at top of handler against missing room
+                    if (!rooms[roomId]) return;
 
+                    // REQUEST USERS
                     if (data.type === "requestToGetUsers") {
-                        sendUsersToRoom();
+                        await sendUsersToRoom();
                     }
 
                     // CREATE ISOLATED WORKSPACE ROOM
-
                     if (data.type === "createWorkspaceRoom") {
                         const newRoomId = await generateRoomId();
                         rooms[newRoomId] = [];
@@ -437,30 +460,27 @@ async function startServer() {
                             activeFileId: "",
                         });
 
-                        ws.send(
-                            JSON.stringify({
+                        if (ws.readyState === WebSocket.OPEN) {
+                            ws.send(JSON.stringify({
                                 type: "workspaceRoomCreated",
                                 roomId: newRoomId,
                                 workspace: data.workspace,
-                            })
-                        );
+                            }));
+                        }
                     }
 
                     // REQUEST FOR ALL DATA
-
                     if (data.type === "requestForAllData") {
                         const workspace = await getRoomWorkspace(roomId);
 
                         if (workspace?.spaces?.length) {
-                            ws.send(
-                                JSON.stringify({
-                                    type: "workspace",
-                                    spaces: workspace.spaces,
-                                    activeSpaceId: workspace.activeSpaceId,
-                                    activeFileId: workspace.activeFileId,
-                                    updatedBy: "server",
-                                })
-                            );
+                            ws.send(JSON.stringify({
+                                type: "workspace",
+                                spaces: workspace.spaces,
+                                activeSpaceId: workspace.activeSpaceId,
+                                activeFileId: workspace.activeFileId,
+                                updatedBy: "server",
+                            }));
                             return;
                         }
 
@@ -468,48 +488,40 @@ async function startServer() {
                             (user) => user.connectionId !== connectionId
                         );
 
-                        if (otherUser) {
-                            otherUser.ws.send(
-                                JSON.stringify({
-                                    type: "requestForAllData",
-                                    userId,
-                                    connectionId,
-                                })
-                            );
+                        if (otherUser && otherUser.ws.readyState === WebSocket.OPEN) {
+                            otherUser.ws.send(JSON.stringify({
+                                type: "requestForAllData",
+                                userId,
+                                connectionId,
+                            }));
                         }
                     }
 
                     // CODE
-
                     if (data.type === "code") {
                         const updatedFile = await patchWorkspaceFile(
                             roomId,
                             data.fileId,
-                            {
-                                code: data.code,
-                            },
+                            { code: data.code },
                             { userId, connectionId, name }
                         );
 
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "code",
-                                        code: data.code,
-                                        fileId: data.fileId,
-                                        version: updatedFile?.version,
-                                        updatedAt: updatedFile?.updatedAt,
-                                        updatedBy: updatedFile?.updatedBy,
-                                        updatedByName: updatedFile?.updatedByName,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "code",
+                                    code: data.code,
+                                    fileId: data.fileId,
+                                    version: updatedFile?.version,
+                                    updatedAt: updatedFile?.updatedAt,
+                                    updatedBy: updatedFile?.updatedBy,
+                                    updatedByName: updatedFile?.updatedByName,
+                                }));
                             }
                         });
                     }
 
                     // WORKSPACE
-
                     if (data.type === "workspace") {
                         await saveRoomWorkspace(roomId, {
                             spaces: data.spaces,
@@ -518,132 +530,108 @@ async function startServer() {
                         });
 
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "workspace",
-                                        spaces: data.spaces,
-                                        activeSpaceId: data.activeSpaceId,
-                                        activeFileId: data.activeFileId,
-                                        updatedBy: connectionId,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "workspace",
+                                    spaces: data.spaces,
+                                    activeSpaceId: data.activeSpaceId,
+                                    activeFileId: data.activeFileId,
+                                    updatedBy: connectionId,
+                                }));
                             }
                         });
                     }
 
                     // INPUT
-
                     if (data.type === "input") {
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "input",
-                                        input: data.input,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "input",
+                                    input: data.input,
+                                }));
                             }
                         });
                     }
 
                     // LANGUAGE
-
                     if (data.type === "language") {
                         const updatedFile = await patchWorkspaceFile(
                             roomId,
                             data.fileId,
-                            {
-                                language: data.language,
-                            },
+                            { language: data.language },
                             { userId, connectionId, name }
                         );
 
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "language",
-                                        language: data.language,
-                                        fileId: data.fileId,
-                                        version: updatedFile?.version,
-                                        updatedAt: updatedFile?.updatedAt,
-                                        updatedBy: updatedFile?.updatedBy,
-                                        updatedByName: updatedFile?.updatedByName,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "language",
+                                    language: data.language,
+                                    fileId: data.fileId,
+                                    version: updatedFile?.version,
+                                    updatedAt: updatedFile?.updatedAt,
+                                    updatedBy: updatedFile?.updatedBy,
+                                    updatedByName: updatedFile?.updatedByName,
+                                }));
                             }
                         });
                     }
 
                     // SUBMIT BUTTON
-
                     if (data.type === "submitBtnStatus") {
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "submitBtnStatus",
-                                        value: data.value,
-                                        isLoading: data.isLoading,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "submitBtnStatus",
+                                    value: data.value,
+                                    isLoading: data.isLoading,
+                                }));
                             }
                         });
                     }
 
                     // OUTPUT BROADCAST
-
                     if (data.type === "outputBroadcast") {
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "output",
-                                        message: data.message,
-                                        success: data.success,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "output",
+                                    message: data.message,
+                                    success: data.success,
+                                }));
                             }
                         });
                     }
 
                     // ALL DATA
-
                     if (data.type === "allData") {
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId === data.connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "allData",
-                                        code: data.code,
-                                        input: data.input,
-                                        language: data.language,
-                                        currentButtonState:
-                                            data.currentButtonState,
-                                        isLoading: data.isLoading,
-                                    })
-                                );
+                            if (user.connectionId === data.connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "allData",
+                                    code: data.code,
+                                    input: data.input,
+                                    language: data.language,
+                                    currentButtonState: data.currentButtonState,
+                                    isLoading: data.isLoading,
+                                }));
                             }
                         });
                     }
 
                     // CURSOR POSITION
-
                     if (data.type === "cursorPosition") {
                         rooms[roomId].forEach((user) => {
-                            if (user.connectionId !== connectionId) {
-                                user.ws.send(
-                                    JSON.stringify({
-                                        type: "cursorPosition",
-                                        cursorPosition:
-                                            data.cursorPosition,
-                                        fileId: data.fileId,
-                                        name,
-                                        userId,
-                                        connectionId,
-                                    })
-                                );
+                            if (user.connectionId !== connectionId && user.ws.readyState === WebSocket.OPEN) {
+                                user.ws.send(JSON.stringify({
+                                    type: "cursorPosition",
+                                    cursorPosition: data.cursorPosition,
+                                    fileId: data.fileId,
+                                    name,
+                                    userId,
+                                    connectionId,
+                                }));
                             }
                         });
                     }
@@ -657,6 +645,7 @@ async function startServer() {
             ws.on("close", async () => {
                 console.log(`User disconnected: ${userId}`);
 
+                // FIX: guard if room already cleaned up
                 if (!rooms[roomId]) return;
 
                 await touchRoomMember(roomId, userId, name);
@@ -665,24 +654,29 @@ async function startServer() {
                     (user) => user.connectionId !== connectionId
                 );
 
-                sendUsersToRoom();
-
+                // FIX: only delete THEN skip sendUsersToRoom if room is now empty
                 if (rooms[roomId].length === 0) {
                     delete rooms[roomId];
-
                     console.log(`Room inactive: ${roomId}`);
+                } else {
+                    // FIX: only send users list if room still has members
+                    await sendUsersToRoom();
                 }
 
                 if (roomSubscriber) {
-                    await roomSubscriber.unsubscribe(roomId);
-                    await roomSubscriber.quit();
+                    try {
+                        await roomSubscriber.unsubscribe(roomId);
+                        await roomSubscriber.quit();
+                    } catch (err) {
+                        console.log("Redis subscriber cleanup error:", err);
+                    }
                 }
 
                 console.log("Updated Rooms:", rooms);
             });
+
         } catch (err) {
             console.log("Connection Error:", err);
-
             ws.close();
         }
     });

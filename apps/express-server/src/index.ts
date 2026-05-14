@@ -7,9 +7,20 @@ import path from "path";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
-const redisClient = createClient();
+// ✅ CORS — allows requests from local dev and Vercel
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://live-code-x-frontend.vercel.app",
+    /\.vercel\.app$/,
+  ],
+  credentials: true,
+}));
+
+const redisClient = createClient({
+  url: process.env.REDIS_URL || "redis://localhost:6379",
+});
 let redisAvailable = false;
 
 redisClient.on("error", (err) => console.log("Redis Client Error", err));
@@ -73,26 +84,28 @@ async function runLocally(
     if (language === "python") {
       const codeFile = path.join(runDir, "userCode.py");
       await fs.writeFile(codeFile, code, "utf8");
-      const pythonResult = await executeCommand(`python "${codeFile}" < "${inputFile}"`);
+      const pythonResult = await executeCommand(`python3 "${codeFile}" < "${inputFile}"`);
       if (!isCommandMissing(pythonResult)) {
         return pythonResult;
       }
-      return await executeCommand(`py -3 "${codeFile}" < "${inputFile}"`);
+      return await executeCommand(`python "${codeFile}" < "${inputFile}"`);
     }
 
     if (language === "java") {
-      const javaFileName = safeFileName(fileName, "Main.java");
-      const mainClass = javaFileName.replace(/\.java$/i, "");
+      // ✅ Extract class name so filename matches — Java requires this
+      const classMatch = code.match(/public\s+class\s+(\w+)/);
+      const className = classMatch ? classMatch[1] : "Main";
+      const javaFileName = `${className}.java`;
       const codeFile = path.join(runDir, javaFileName);
       await fs.writeFile(codeFile, code, "utf8");
       return await executeCommand(
-        `cd /d "${runDir}" && javac "${codeFile}" && java -cp "${runDir}" ${mainClass} < "${inputFile}"`
+        `cd "${runDir}" && javac "${javaFileName}" && java -cp "${runDir}" ${className} < "${inputFile}"`
       );
     }
 
     if (language === "cpp") {
       const codeFile = path.join(runDir, "userCode.cpp");
-      const exeFile = path.join(runDir, "a.exe");
+      const exeFile = path.join(runDir, "a.out");
       await fs.writeFile(codeFile, code, "utf8");
       const nativeResult = await executeCommand(
         `g++ "${codeFile}" -o "${exeFile}" && "${exeFile}" < "${inputFile}"`
@@ -104,7 +117,7 @@ async function runLocally(
 
     if (language === "rust") {
       const codeFile = path.join(runDir, "userCode.rs");
-      const exeFile = path.join(runDir, "a.exe");
+      const exeFile = path.join(runDir, "a.out");
       await fs.writeFile(codeFile, code, "utf8");
       const nativeResult = await executeCommand(
         `rustc "${codeFile}" -o "${exeFile}" && "${exeFile}" < "${inputFile}"`
@@ -123,28 +136,23 @@ async function runLocally(
       }
     }
 
+    // ✅ Docker fallback for C++, Rust, Go when native compilers not available
     const mountPath = dockerPath(runDir);
     const dockerCommands: Record<string, { file: string; command: string }> = {
       cpp: {
         file: "userCode.cpp",
         command:
-          'docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "' +
-          mountPath +
-          ':/usr/src/app" gcc:11 sh -c "g++ /usr/src/app/userCode.cpp -o /usr/src/app/a.out && /usr/src/app/a.out < /usr/src/app/input.txt"',
+          `docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "${mountPath}:/usr/src/app" gcc:11 sh -c "g++ /usr/src/app/userCode.cpp -o /usr/src/app/a.out && /usr/src/app/a.out < /usr/src/app/input.txt"`,
       },
       rust: {
         file: "userCode.rs",
         command:
-          'docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "' +
-          mountPath +
-          ':/usr/src/app" rust:latest sh -c "rustc /usr/src/app/userCode.rs -o /usr/src/app/a.out && /usr/src/app/a.out < /usr/src/app/input.txt"',
+          `docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "${mountPath}:/usr/src/app" rust:latest sh -c "rustc /usr/src/app/userCode.rs -o /usr/src/app/a.out && /usr/src/app/a.out < /usr/src/app/input.txt"`,
       },
       go: {
         file: "userCode.go",
         command:
-          'docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "' +
-          mountPath +
-          ':/usr/src/app" golang:1.20 sh -c "go run /usr/src/app/userCode.go < /usr/src/app/input.txt"',
+          `docker run --rm --memory="256m" --cpus="1.0" --pids-limit 100 -v "${mountPath}:/usr/src/app" golang:1.20 sh -c "go run /usr/src/app/userCode.go < /usr/src/app/input.txt"`,
       },
     };
 
@@ -165,7 +173,7 @@ async function runLocally(
     ) {
       return {
         output:
-          "Docker Desktop is required to run C++, Rust, and Go on this machine. Start Docker Desktop, then run again.",
+          "Docker is required to run C++, Rust, and Go on this server. Please contact the admin.",
         success: false,
       };
     }
@@ -180,7 +188,7 @@ app.post("/submit", async (req, res) => {
   const { code, language, roomId, input, fileName } = req.body;
   const submissionId = `submission-${Date.now()}-${roomId}`;
 
-  console.log(`Received submission from room ${roomId}`);
+  console.log(`Received submission from room ${roomId} | language: ${language}`);
 
   try {
     const result = await runLocally(code, language, input, fileName);
@@ -191,20 +199,24 @@ app.post("/submit", async (req, res) => {
   }
 });
 
-const server = app.listen(3000, '0.0.0.0', () => {
-  console.log("Express Server Listening on port 3000");
+// ✅ Health check — Render pings this to keep the service alive
+app.get("/health", (_req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
+const PORT = process.env.PORT || 3000;
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Express Server listening on port ${PORT}`);
 });
 
 async function main() {
   try {
     await redisClient.connect();
     redisAvailable = true;
-
     console.log("Redis Client Connected");
   } catch (error) {
     redisAvailable = false;
-    console.log("Failed to connect to Redis", error);
-    console.log("Express server will run code locally for JavaScript and Python");
+    console.log("Redis unavailable — running code locally");
   }
 }
 

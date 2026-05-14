@@ -5379,3 +5379,24 @@ Updated Rooms: {
 User disconnected: 98868
 Room inactive: 794960
 Updated Rooms: { '545745': [], '835525': [] }
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '',
+  userId: 'origin-test',
+  connectionId: 'origin-conn',
+  name: 'OriginTest'
+}
+Created Room: 233465
+Current Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ]
+}

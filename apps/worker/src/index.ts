@@ -10,7 +10,7 @@ const numCPUs = 3;
 if (cluster.isPrimary) {
   console.log(`Master ${process.pid} is running`);
 
-  // Fork workers.
+  
   for (let i = 0; i < numCPUs; i++) {
     const worker = cluster.fork();
     console.log(`Worker ${worker.process.pid} started`);
@@ -33,7 +33,7 @@ if (cluster.isPrimary) {
       `Processing submission for room id: ${roomId}, submission id: ${submissionId}`
     );
 
-    // Create unique directory for code execution
+    
     const absoluteCodeDir = path.resolve(`./tmp/user-${Date.now()}`);
     await fs.mkdir(absoluteCodeDir, { recursive: true });
 
@@ -43,10 +43,10 @@ if (cluster.isPrimary) {
     const dockerMountPath = absoluteCodeDir.replace(/\\/g, "/");
 
     try {
-      // Write input file
+      
       await fs.writeFile(inputFilePath, input, "utf8");
 
-      // Generate code file and Docker command based on language
+      
       switch (language) {
         case "javascript":
           codeFilePath = path.join(absoluteCodeDir, "userCode.js");
@@ -98,7 +98,7 @@ sh -c "g++ /usr/src/app/userCode.cpp -o /usr/src/app/a.out && /usr/src/app/a.out
       return;
     }
 
-    // Execute Docker command
+    
     exec(dockerCommand, { timeout: 10000 }, async (error, stdout, stderr) => {
       let result = [stdout, stderr].filter(Boolean).join("\n").trim();
       if (error) {
@@ -113,7 +113,7 @@ sh -c "g++ /usr/src/app/userCode.cpp -o /usr/src/app/a.out && /usr/src/app/a.out
         console.error("Failed to publish result to Redis:", err);
       }
 
-      // Clean up by removing the created directory
+     
       try {
         await fs.rm(absoluteCodeDir, { recursive: true, force: true });
       } catch (cleanupError) {
