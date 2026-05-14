@@ -22,7 +22,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import { connectedUsersAtom } from "../atoms/connectedUsersAtom";
 import { socketAtom } from "../atoms/socketAtom";
 import { userAtom } from "../atoms/userAtom";
+// REMOVE:
 import { IP_ADDRESS } from "../Globle";
+
+
+import { EXPRESS_BASE_URL, WS_BASE_URL } from "../Globle";
 
 type WorkspaceFolder = {
   id: string;
@@ -374,12 +378,12 @@ const CodeEditor: React.FC = () => {
     }
 
     const ws = new WebSocket(
-      `ws://${IP_ADDRESS}:5000?roomId=${user.roomId}&id=${
-        user.id
-      }&connectionId=${connectionIdRef.current}&name=${encodeURIComponent(
-        user.name
-      )}&type=join`
-    );
+  `${WS_BASE_URL}?roomId=${user.roomId}&id=${
+    user.id
+  }&connectionId=${connectionIdRef.current}&name=${encodeURIComponent(
+    user.name
+  )}&type=join`
+);
 
     socketRef.current = ws;
     setSocket(ws);
@@ -737,7 +741,7 @@ const CodeEditor: React.FC = () => {
     });
 
     try {
-      const response = await fetch(`http://${IP_ADDRESS}:3000/submit`, {
+     const response = await fetch(`${EXPRESS_BASE_URL}/submit`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -5357,3 +5357,25 @@ Current Rooms: {
 Message: requestToGetUsers
 Message: requestForAllData
 Message: workspace
+User disconnected: 56663
+Updated Rooms: {
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+User disconnected: 98868
+Room inactive: 794960
+Updated Rooms: { '545745': [], '835525': [] }

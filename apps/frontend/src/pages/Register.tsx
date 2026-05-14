@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { userAtom } from "../atoms/userAtom";
 import { socketAtom } from "../atoms/socketAtom";
 import { useNavigate, useParams } from "react-router-dom";
-import { IP_ADDRESS } from "../Globle";
+import { WS_BASE_URL } from "../Globle";
 
 const ROOM_LIMIT = 8;
 
@@ -79,11 +79,11 @@ const Register = () => {
         });
 
         const connectionId = getConnectionId();
-        const ws = new WebSocket(
-            `ws://${IP_ADDRESS}:5000?roomId=${roomId.trim()}&id=${generatedId}&connectionId=${connectionId}&name=${encodeURIComponent(
-                name.trim()
-            )}&type=${type}`
-        );
+       const ws = new WebSocket(
+  `${WS_BASE_URL}?roomId=${roomId.trim()}&id=${generatedId}&connectionId=${connectionId}&name=${encodeURIComponent(
+    name.trim()
+  )}&type=${type}`
+);
 
         setSocket(ws);
 
