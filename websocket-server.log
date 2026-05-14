@@ -1,0 +1,5444 @@
+Redis Client Connected
+WebSocket Server Started on Port 5000
+Redis Client Connected
+WebSocket Server Started on Port 5000
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'create', roomId: '', userId: '74629', name: 'srishh' }
+Created Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '67420', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '67420', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '67420', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '67420', name: 'lalisa', ws: [WebSocket] },
+    { userId: '67420', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: language
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: code
+Message: submitBtnStatus
+User disconnected: 67420
+User disconnected: 67420
+Updated Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Updated Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+User disconnected: 74629
+Room inactive: 322251
+User disconnected: 74629
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+Message: submitBtnStatus
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '67420', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '67420', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: submitBtnStatus
+User disconnected: 67420
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Redis Client Connected
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '73343', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '73343', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: cursorPosition
+User disconnected: 73343
+User disconnected: 73343
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '73343', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+User disconnected: 73343
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Redis Client Connected
+WebSocket Server Started on Port 5000
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '73343', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+User disconnected: 73343
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'create', roomId: '', userId: '17724', name: 'srishh' }
+Created Room: 513389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '513389': [ { userId: '17724', name: 'srishh', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '513389', userId: '17724', name: 'srishh' }
+Joined Room: 513389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '513389': [
+    { userId: '17724', name: 'srishh', ws: [WebSocket] },
+    { userId: '17724', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: language
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: submitBtnStatus
+New WebSocket Connection
+{ type: 'join', roomId: '513389', userId: '17724', name: 'srishh' }
+Joined Room: 513389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '513389': [
+    { userId: '17724', name: 'srishh', ws: [WebSocket] },
+    { userId: '17724', name: 'srishh', ws: [WebSocket] },
+    { userId: '17724', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: submitBtnStatus
+User disconnected: 17724
+Room inactive: 513389
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+User disconnected: 17724
+User disconnected: 17724
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '73343', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '73343', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: cursorPosition
+User disconnected: 73343
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+User disconnected: 74629
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Updated Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+User disconnected: 74629
+Updated Rooms: { '322251': [ { userId: '16572', name: 'lalisa', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 74629
+User disconnected: 16572
+Room inactive: 322251
+Updated Rooms: {}
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '16572', name: 'lalisa', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 16572
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '16572', name: 'lalisa', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+User disconnected: 16572
+Room inactive: 322251
+Updated Rooms: {}
+User disconnected: 16572
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '16572', name: 'lalisa', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+User disconnected: 74629
+User disconnected: 16572
+Room inactive: 322251
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+Message: allData
+Message: workspace
+User disconnected: 16572
+User disconnected: 74629
+Room inactive: 322251
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Updated Rooms: {}
+Updated Rooms: {}
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '16572', name: 'lalisa', ws: [WebSocket] } ] }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+Message: allData
+Message: workspace
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: allData
+Message: workspace
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: language
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: language
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: language
+Message: code
+Message: language
+Message: code
+Message: language
+Message: code
+Message: language
+Message: code
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '16572', name: 'lalisa' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] },
+    { userId: '16572', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 16572
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 16572
+Updated Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 1382
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Message: workspace
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: workspace
+Message: workspace
+Message: workspace
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: workspace
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: workspace
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+New WebSocket Connection
+{ type: 'create', roomId: '322251', userId: '46881', name: 'lalisa' }
+Created Room: 643389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+Joined Room: 643389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '643389': [
+    { userId: '46881', name: 'lalisa', ws: [WebSocket] },
+    { userId: '46881', name: 'lalisa', ws: [WebSocket] }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 46881
+Room inactive: 643389
+User disconnected: 46881
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+Joined Room: 643389
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+User disconnected: 74629
+Room inactive: 322251
+User disconnected: 46881
+Room inactive: 643389
+Updated Rooms: {}
+Updated Rooms: {}
+Joined Room: 643389
+Current Rooms: { '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ] }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+User disconnected: 1382
+Updated Rooms: {
+  '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 74629
+Updated Rooms: {
+  '322251': [ { userId: '1382', name: 'jennie', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+User disconnected: 1382
+Room inactive: 322251
+User disconnected: 46881
+Room inactive: 643389
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: workspace
+User disconnected: 1382
+User disconnected: 46881
+Room inactive: 643389
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: { '322251': [ { userId: '1382', name: 'jennie', ws: [WebSocket] } ] }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+Message: requestToGetUsers
+Message: requestForAllData
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: workspace
+User disconnected: 1382
+User disconnected: 46881
+Room inactive: 643389
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+Updated Rooms: { '322251': [ { userId: '74629', name: 'srishh', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '1382', name: 'jennie' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '74629', name: 'srishh', ws: [WebSocket] },
+    { userId: '1382', name: 'jennie', ws: [WebSocket] }
+  ]
+}
+User disconnected: 74629
+Updated Rooms: { '322251': [ { userId: '1382', name: 'jennie', ws: [WebSocket] } ] }
+New WebSocket Connection
+{ type: 'join', roomId: '322251', userId: '74629', name: 'srishh' }
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ]
+}
+New WebSocket Connection
+{ type: 'join', roomId: '643389', userId: '46881', name: 'lalisa' }
+Message: requestToGetUsers
+Message: requestForAllData
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: workspace
+Redis Client Connected
+New WebSocket Connection
+{ type: 'create', roomId: '', userId: 'owner-smoke', name: 'SmokeA' }
+Created Room: 164719
+Current Rooms: {
+  '164719': [ { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] } ],
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '164719',
+  userId: 'owner-smoke',
+  name: 'SmokeB'
+}
+Joined Room: 164719
+Current Rooms: {
+  '164719': [
+    { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] },
+    { userId: 'owner-smoke', name: 'SmokeB', ws: [WebSocket] }
+  ],
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: code
+User disconnected: owner-smoke
+Room inactive: 164719
+User disconnected: owner-smoke
+Updated Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{ type: 'create', roomId: '', userId: 'owner-smoke', name: 'SmokeA' }
+Created Room: 944097
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ],
+  '944097': [ { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '944097',
+  userId: 'owner-smoke',
+  name: 'SmokeB'
+}
+Joined Room: 944097
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ],
+  '944097': [
+    { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] },
+    { userId: 'owner-smoke', name: 'SmokeB', ws: [WebSocket] }
+  ]
+}
+Message: code
+User disconnected: owner-smoke
+Room inactive: 944097
+User disconnected: owner-smoke
+Updated Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{ type: 'create', roomId: '', userId: 'owner-smoke', name: 'SmokeA' }
+Created Room: 527913
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '527913': [ { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] } ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '527913',
+  userId: 'owner-smoke',
+  name: 'SmokeB'
+}
+Joined Room: 527913
+Current Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '527913': [
+    { userId: 'owner-smoke', name: 'SmokeA', ws: [WebSocket] },
+    { userId: 'owner-smoke', name: 'SmokeB', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+Message: code
+User disconnected: owner-smoke
+Room inactive: 527913
+Updated Rooms: {
+  '322251': [
+    { userId: '1382', name: 'jennie', ws: [WebSocket] },
+    { userId: '74629', name: 'srishh', ws: [WebSocket] }
+  ],
+  '643389': [ { userId: '46881', name: 'lalisa', ws: [WebSocket] } ]
+}
+User disconnected: owner-smoke
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '',
+  userId: 'owner-smoke',
+  connectionId: 'conn-a',
+  name: 'SmokeA'
+}
+Created Room: 659020
+Current Rooms: {
+  '659020': [
+    {
+      userId: 'owner-smoke',
+      connectionId: 'conn-a',
+      name: 'SmokeA',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '659020',
+  userId: 'owner-smoke',
+  connectionId: 'conn-b',
+  name: 'SmokeB'
+}
+Joined Room: 659020
+Current Rooms: {
+  '659020': [
+    {
+      userId: 'owner-smoke',
+      connectionId: 'conn-a',
+      name: 'SmokeA',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'owner-smoke',
+      connectionId: 'conn-b',
+      name: 'SmokeB',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: code
+User disconnected: owner-smoke
+User disconnected: owner-smoke
+Room inactive: 659020
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '74629',
+  connectionId: 'connection-1778742041531-bfbb47254826e',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '643389',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '643389',
+  userId: '46881',
+  connectionId: 'connection-1778743450080-638d8415385608',
+  name: 'lalisa'
+}
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 46881
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '643389',
+  userId: '46881',
+  connectionId: 'connection-1778743450080-638d8415385608',
+  name: 'lalisa'
+}
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '74629',
+  connectionId: 'connection-1778742041531-bfbb47254826e',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+User disconnected: 46881
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '643389',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '643389',
+  userId: '46881',
+  connectionId: 'connection-1778742041527-88725b43db126',
+  name: 'lalisa'
+}
+Joined Room: 643389
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '1382',
+  connectionId: 'connection-1778742041527-7f9ab928bf7018',
+  name: 'jennie'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: workspace
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 74629
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: cursorPosition
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '74629',
+  connectionId: 'connection-1778742041531-bfbb47254826e',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: createWorkspaceRoom
+User disconnected: 46881
+Updated Rooms: {
+  '301998': [],
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '301998',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 301998
+Current Rooms: {
+  '301998': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: workspace
+Message: createWorkspaceRoom
+User disconnected: 46881
+Room inactive: 301998
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '826247': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '826247',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 826247
+Current Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '826247': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: createWorkspaceRoom
+User disconnected: 46881
+Room inactive: 826247
+Updated Rooms: {
+  '191028': [],
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '191028',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 191028
+Current Rooms: {
+  '191028': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: workspace
+Message: createWorkspaceRoom
+User disconnected: 46881
+Room inactive: 191028
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '969848',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 969848
+Current Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: workspace
+User disconnected: 74629
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+User disconnected: 46881
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '1382',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+User disconnected: 1382
+Room inactive: 322251
+Updated Rooms: {
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '74629',
+  connectionId: 'connection-1778742041531-bfbb47254826e',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '969848',
+  userId: '46881',
+  connectionId: 'connection-1778742041527-88725b43db126',
+  name: 'lalisa'
+}
+Joined Room: 969848
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '969848',
+  userId: '46881',
+  connectionId: 'connection-1778742041527-7f9ab928bf7018',
+  name: 'lalisa'
+}
+Joined Room: 969848
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: workspace
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '74629',
+  connectionId: 'connection-1778742041531-bfbb47254826e',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: '56663',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: '56663',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778743689855-9f7cf92db9c268',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: '56663',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778743689855-9f7cf92db9c268',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 46881
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: '56663',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778743689855-9f7cf92db9c268',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '969848',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 969848
+Current Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: '56663',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778743689855-9f7cf92db9c268',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '643389': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743450080-638d8415385608',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ],
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-88725b43db126',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778742041527-7f9ab928bf7018',
+      name: 'lalisa',
+      ws: [WebSocket]
+    },
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+User disconnected: 46881
+User disconnected: 46881
+User disconnected: 56663
+User disconnected: 56663
+User disconnected: 46881
+Room inactive: 643389
+User disconnected: 46881
+Room inactive: 969848
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '74629',
+      connectionId: 'connection-1778742041531-bfbb47254826e',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+User disconnected: 74629
+Room inactive: 322251
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778743689855-9f7cf92db9c268',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778743689855-9f7cf92db9c268',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '969848',
+  userId: '46881',
+  connectionId: 'connection-1778743441050-a79240887bcff8',
+  name: 'lalisa'
+}
+Joined Room: 969848
+Current Rooms: {
+  '969848': [
+    {
+      userId: '46881',
+      connectionId: 'connection-1778743441050-a79240887bcff8',
+      name: 'lalisa',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 46881
+Room inactive: 969848
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '513389',
+  userId: '17724',
+  connectionId: 'connection-1778745657925-fc1810f7395e38',
+  name: 'srishh'
+}
+Joined Room: 513389
+Current Rooms: {
+  '513389': [
+    {
+      userId: '17724',
+      connectionId: 'connection-1778745657925-fc1810f7395e38',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: language
+Message: code
+Message: language
+Message: code
+Message: language
+Message: code
+Message: language
+Message: code
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: language
+Message: code
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+User disconnected: 17724
+Room inactive: 513389
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: workspace
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+User disconnected: 56663
+Room inactive: 322251
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 56663
+User disconnected: 56663
+Room inactive: 322251
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+User disconnected: 56663
+User disconnected: 56663
+Room inactive: 322251
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+User disconnected: 56663
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+User disconnected: 56663
+Room inactive: 322251
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Updated Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '',
+  userId: 'user-0',
+  connectionId: 'conn-0',
+  name: 'User0'
+}
+Created Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-1',
+  connectionId: 'conn-1',
+  name: 'User1'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-2',
+  connectionId: 'conn-2',
+  name: 'User2'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-3',
+  connectionId: 'conn-3',
+  name: 'User3'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-3',
+      connectionId: 'conn-3',
+      name: 'User3',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-4',
+  connectionId: 'conn-4',
+  name: 'User4'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-3',
+      connectionId: 'conn-3',
+      name: 'User3',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-4',
+      connectionId: 'conn-4',
+      name: 'User4',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-5',
+  connectionId: 'conn-5',
+  name: 'User5'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-3',
+      connectionId: 'conn-3',
+      name: 'User3',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-4',
+      connectionId: 'conn-4',
+      name: 'User4',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-5',
+      connectionId: 'conn-5',
+      name: 'User5',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-6',
+  connectionId: 'conn-6',
+  name: 'User6'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-3',
+      connectionId: 'conn-3',
+      name: 'User3',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-4',
+      connectionId: 'conn-4',
+      name: 'User4',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-5',
+      connectionId: 'conn-5',
+      name: 'User5',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-6',
+      connectionId: 'conn-6',
+      name: 'User6',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-7',
+  connectionId: 'conn-7',
+  name: 'User7'
+}
+Joined Room: 499485
+Current Rooms: {
+  '499485': [
+    {
+      userId: 'user-0',
+      connectionId: 'conn-0',
+      name: 'User0',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-1',
+      connectionId: 'conn-1',
+      name: 'User1',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-2',
+      connectionId: 'conn-2',
+      name: 'User2',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-3',
+      connectionId: 'conn-3',
+      name: 'User3',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-4',
+      connectionId: 'conn-4',
+      name: 'User4',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-5',
+      connectionId: 'conn-5',
+      name: 'User5',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-6',
+      connectionId: 'conn-6',
+      name: 'User6',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'user-7',
+      connectionId: 'conn-7',
+      name: 'User7',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '499485',
+  userId: 'user-9',
+  connectionId: 'conn-9',
+  name: 'User9'
+}
+User disconnected: user-4
+User disconnected: user-3
+User disconnected: user-2
+User disconnected: user-1
+User disconnected: user-0
+User disconnected: user-7
+User disconnected: user-6
+User disconnected: user-5
+Room inactive: 499485
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'srishh'
+}
+Joined Room: 322251
+Current Rooms: {
+  '322251': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: workspace
+Message: cursorPosition
+Message: createWorkspaceRoom
+User disconnected: 56663
+Room inactive: 322251
+Updated Rooms: { '872831': [] }
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '322251',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'Rose'
+}
+Created Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'Rose',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747355056-9f624c34c5a5f',
+  name: 'Rose'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'Rose',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'Rose',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: language
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: input
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'Rose',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747355056-9f624c34c5a5f',
+      name: 'Rose',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+User disconnected: 56663
+Updated Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: { '872831': [] }
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: { '872831': [] }
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: { '872831': [] }
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '872831': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '',
+  userId: 'same-user',
+  connectionId: 'conn-a',
+  name: 'Priya'
+}
+Created Room: 862030
+Current Rooms: {
+  '862030': [
+    {
+      userId: 'same-user',
+      connectionId: 'conn-a',
+      name: 'Priya',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '862030',
+  userId: 'same-user',
+  connectionId: 'conn-b',
+  name: 'Priya'
+}
+Joined Room: 862030
+Current Rooms: {
+  '862030': [
+    {
+      userId: 'same-user',
+      connectionId: 'conn-a',
+      name: 'Priya',
+      ws: [WebSocket]
+    },
+    {
+      userId: 'same-user',
+      connectionId: 'conn-b',
+      name: 'Priya',
+      ws: [WebSocket]
+    }
+  ]
+}
+User disconnected: same-user
+User disconnected: same-user
+Room inactive: 862030
+Updated Rooms: {}
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: {}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+Message: workspace
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: cursorPosition
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778750043968-0f4b6814e711d',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750043968-0f4b6814e711d',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Updated Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Updated Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '98868',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'abhay'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '98868',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'abhay'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: code
+Message: cursorPosition
+Message: submitBtnStatus
+Message: outputBroadcast
+Message: submitBtnStatus
+Message: createWorkspaceRoom
+User disconnected: 56663
+Updated Rooms: {
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Created Room: 527037
+Current Rooms: {
+  '527037': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '527037',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 527037
+Current Rooms: {
+  '527037': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 527037
+Updated Rooms: {
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'srishh'
+}
+Joined Room: 794960
+Current Rooms: {
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'srishh',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+Message: cursorPosition
+Message: createWorkspaceRoom
+User disconnected: 56663
+Updated Rooms: {
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'Jennie'
+}
+Created Room: 417214
+Current Rooms: {
+  '417214': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'Jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '417214',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'Jennie'
+}
+Joined Room: 417214
+Current Rooms: {
+  '417214': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'Jennie',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'Jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 417214
+Updated Rooms: {
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778747273948-8867870831a5b',
+  name: 'Jennie'
+}
+Joined Room: 794960
+Current Rooms: {
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '56663',
+      connectionId: 'connection-1778747273948-8867870831a5b',
+      name: 'Jennie',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Updated Rooms: {
+  '545745': [],
+  '794960': [
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    },
+    {
+      userId: '98868',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'abhay',
+      ws: [WebSocket]
+    }
+  ],
+  '835525': []
+}
+User disconnected: 98868
+Room inactive: 794960
+Updated Rooms: { '545745': [], '835525': [] }
+Redis Client Connected
+WebSocket Server Started on Port 5000
+New WebSocket Connection
+{
+  type: 'create',
+  roomId: '',
+  userId: 'origin-test',
+  connectionId: 'origin-conn',
+  name: 'OriginTest'
+}
+Created Room: 233465
+Current Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ]
+}
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'Jennie'
+}
+Joined Room: 794960
+Current Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ],
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'Jennie',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ]
+}
