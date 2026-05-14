@@ -5400,3 +5400,45 @@ Current Rooms: {
     }
   ]
 }
+New WebSocket Connection
+{
+  type: 'join',
+  roomId: '794960',
+  userId: '56663',
+  connectionId: 'connection-1778750087015-3c623080725ba8',
+  name: 'Jennie'
+}
+Joined Room: 794960
+Current Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ],
+  '794960': [
+    {
+      userId: '56663',
+      connectionId: 'connection-1778750087015-3c623080725ba8',
+      name: 'Jennie',
+      ws: [WebSocket]
+    }
+  ]
+}
+Message: requestToGetUsers
+Message: requestForAllData
+Message: workspace
+User disconnected: 56663
+Room inactive: 794960
+Updated Rooms: {
+  '233465': [
+    {
+      userId: 'origin-test',
+      connectionId: 'origin-conn',
+      name: 'OriginTest',
+      ws: [WebSocket]
+    }
+  ]
+}
