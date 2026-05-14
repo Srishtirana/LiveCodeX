@@ -14,10 +14,18 @@ const server = http.createServer((req, res) => {
 });
 const wss = new WebSocketServer({ noServer: true });
 
-const allowedOrigins = new Set([
+const defaultAllowedOrigins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://live-code-x-frontend.vercel.app",
+];
+
+const allowedOrigins = new Set([
+    ...defaultAllowedOrigins,
+    ...(process.env.CLIENT_ORIGINS || "")
+        .split(",")
+        .map((origin) => origin.trim())
+        .filter(Boolean),
 ]);
 
 function isAllowedOrigin(origin?: string) {
@@ -26,6 +34,8 @@ function isAllowedOrigin(origin?: string) {
 
     try {
         const url = new URL(origin);
+        const isVercelPreview =
+            url.protocol === "https:" && url.hostname.endsWith(".vercel.app");
         const isLocalDevHost =
             url.protocol === "http:" &&
             url.port === "5173" &&
@@ -35,7 +45,7 @@ function isAllowedOrigin(origin?: string) {
                 url.hostname.startsWith("10.") ||
                 /^172\.(1[6-9]|2\d|3[0-1])\./.test(url.hostname));
 
-        return isLocalDevHost;
+        return isVercelPreview || isLocalDevHost;
     } catch {
         return false;
     }

@@ -10,13 +10,44 @@ const app = express();
 app.use(express.json());
 
 // ✅ CORS
+const defaultAllowedOrigins = [
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  "https://live-code-x-frontend.vercel.app",
+];
+
+const allowedOrigins = new Set([
+  ...defaultAllowedOrigins,
+  ...(process.env.CLIENT_ORIGINS || "")
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean),
+]);
+
+function isAllowedOrigin(origin?: string): boolean {
+  if (!origin) return true;
+  if (allowedOrigins.has(origin)) return true;
+
+  try {
+    const url = new URL(origin);
+    const isVercelPreview =
+      url.protocol === "https:" && url.hostname.endsWith(".vercel.app");
+    const isLocalDevHost =
+      url.protocol === "http:" &&
+      url.port === "5173" &&
+      (url.hostname === "localhost" || url.hostname === "127.0.0.1");
+
+    return isVercelPreview || isLocalDevHost;
+  } catch {
+    return false;
+  }
+}
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://live-code-x-frontend.vercel.app",
-      /\.vercel\.app$/,
-    ],
+    origin: (origin, callback) => {
+      callback(null, isAllowedOrigin(origin));
+    },
     credentials: true,
   })
 );

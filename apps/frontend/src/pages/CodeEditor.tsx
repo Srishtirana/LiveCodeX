@@ -22,10 +22,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { connectedUsersAtom } from "../atoms/connectedUsersAtom";
 import { socketAtom } from "../atoms/socketAtom";
 import { userAtom } from "../atoms/userAtom";
-// REMOVE:
-import { IP_ADDRESS } from "../Globle";
-
-
 import { EXPRESS_BASE_URL, WS_BASE_URL } from "../Globle";
 
 type WorkspaceFolder = {
